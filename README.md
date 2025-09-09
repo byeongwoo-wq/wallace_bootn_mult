@@ -12,12 +12,14 @@
  Wallace Tree는 여러 개의 Partial Product(부분 곱)을 빠르게 더하는 구조입니다. 일반적으로 Full Adder와 Half Adder를 계층적으로 구성하여 Carry Save Adder 방식으로 빠르게 합산합니다.  
 ## 3. 16bit Booth-Wallace tree multiplier 설계 방식
 A. Booth 인코딩 (Radix-4) 
+
 <img width="616" height="170" alt="image" src="https://github.com/user-attachments/assets/6f1c485c-ac49-40e0-b3e3-961376703684" />
 
   3비트씩 묶어서 Multiplier(Y)를 분석 → partial product 수를 절반으로 감소 
   16비트 Multiplier라면 (16/2) = 8개의 partial product가 생성됨
 B. Partial Product 생성 
   Booth 인코딩 결과는 Multiplier의 위치(자리수)에 따라 결과를 왼쪽으로 시프트해야 함. 
+  
   <img width="618" height="247" alt="image" src="https://github.com/user-attachments/assets/609b7ac8-4f85-407c-b557-0dabdc9f593f" />
 
 C. Wallace Tree 합산 구조 
