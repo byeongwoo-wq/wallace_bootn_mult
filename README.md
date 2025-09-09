@@ -13,11 +13,13 @@
 ## 3. 16bit Booth-Wallace tree multiplier 설계 방식
 A. Booth 인코딩 (Radix-4) 
 <img width="616" height="170" alt="image" src="https://github.com/user-attachments/assets/6f1c485c-ac49-40e0-b3e3-961376703684" />
+
   3비트씩 묶어서 Multiplier(Y)를 분석 → partial product 수를 절반으로 감소 
   16비트 Multiplier라면 (16/2) = 8개의 partial product가 생성됨
 B. Partial Product 생성 
   Booth 인코딩 결과는 Multiplier의 위치(자리수)에 따라 결과를 왼쪽으로 시프트해야 함. 
   <img width="618" height="247" alt="image" src="https://github.com/user-attachments/assets/609b7ac8-4f85-407c-b557-0dabdc9f593f" />
+
 C. Wallace Tree 합산 구조 
   모든 partial product의 각 비트 위치(column)를 수직으로 정렬 
   각 column에서 3개씩 묶어 Full Adder를 구성 (3:2 압축기) 
