@@ -28,5 +28,6 @@ C. Wallace Tree 합산 구조
   각 column에서 3개씩 묶어 Full Adder를 구성 (3:2 압축기) 
   남은 비트 수가 2개 이하가 될 때까지 반복 (Carry Save 방식) 
   마지막 2개의 행을 **Carry Propagate Adder(CPA)**로 처리 
+  
 D. 최종 Carry Propagate Adder (CPA) 
   Wallace Tree 결과로 나온 두 개의 32비트 결과를 최종 덧셈
