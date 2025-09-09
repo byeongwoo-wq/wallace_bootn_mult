@@ -17,6 +17,7 @@ A. Booth 인코딩 (Radix-4)
 
   3비트씩 묶어서 Multiplier(Y)를 분석 → partial product 수를 절반으로 감소 
   16비트 Multiplier라면 (16/2) = 8개의 partial product가 생성됨
+  
 B. Partial Product 생성 
   Booth 인코딩 결과는 Multiplier의 위치(자리수)에 따라 결과를 왼쪽으로 시프트해야 함. 
   
